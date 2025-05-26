@@ -1,0 +1,118 @@
+/*------------Login & Register Form-----------*/
+:root{
+  --primary-color:#f4e6e6;
+  --base-color:#f2f2f2d3;
+  --header-color:#216586;
+  --input-color:whitesmoke;
+  --border-color:#999999;
+  --text-color:#222;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;  
+}
+body{
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    margin: 20px;
+}
+.container{
+    max-width:500px;
+    background-color: var(--base-color);
+    border: 1px solid #d5d1d1;
+    font-size: 0.8rem;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 5px;
+    align-items: center;      
+}
+.container h1{
+    font-size: 2.6rem;
+    font-weight: 800;
+    color: var(--header-color);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.container .hero{
+    line-height: 2.5;
+    font-size: 3rem;
+}
+#form-container, #regis-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    gap: 8px;
+    margin: 1rem auto;
+}
+.input-field{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.input-field input{
+    border: 1px solid var(--base-color);
+    width: 100%;
+    height: 2.8rem;
+    padding: 1em;
+    border-radius: 5px;
+    outline: none;
+}
+.input-field input:hover{
+    border-color: var(--border-color);
+}
+#form-container button, #regis-container button{
+    background-color: var(--text-color);
+    width: 100%;
+    margin-top: 2rem;
+    height: 2.9rem;
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: var(--base-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500; 
+    cursor: pointer;
+    transition: 150ms ease;  
+}
+#form-container button:hover,
+#regis-container button:hover{
+    background-color: #454343;
+}
+.container .require{
+    font-size: 0.75rem;
+    margin-top: 20px;
+}
+.container .links{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-size: 0.7rem;
+    gap: 40px;    
+}
+a{
+    color: var(--header-color);
+    text-decoration: none;
+}
+
+/*error login & regist message*/
+.message .regis-message{
+    color: #f90909;
+}
+
+@media (min-width: 600px){
+    .container{
+      width: max(600px, 100%);
+    }
+}
+

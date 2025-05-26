@@ -1,0 +1,118 @@
+:root{
+    --primary-color:#565454;
+    --text-color:#222;
+    --button-text-color: whitesmoke;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif; 
+}
+body{
+    background-color:#fffafae4;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    margin: 20px;
+}
+#email-section {
+    background-color: #ecf0f9;
+    border: 1px solid #d5d1d1;
+    border-radius: 3px;
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    gap: 30px;
+    padding: 50px 40px;
+ 
+}
+#password-section{
+    background-color: #ecf0f9;
+    border: 1px solid #d5d1d1;
+    border-radius: 3px;
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    padding: 50px 40px;
+    display: none;
+}
+#email-section p{
+    font-size: 0.9rem;
+}
+#email-section input{
+    margin-bottom: 10px;
+}
+#email-section .alert-message,
+#password-section .pass-alert-message {
+    font-size: 0.8rem;
+}
+
+#password-section .pass-alert-message {
+    margin-top: 20px;
+}
+#email-input,
+#new-password, 
+#re-enter-password {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+}
+button{
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0.8rem 1.5rem;
+}  
+button:hover{
+    background-color: #dcdcdcd2;
+}
+.create-container{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center ; 
+}
+.create-container .pass-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.create-container .pass-box p{
+    margin-top: 10px;
+}
+.pass-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 7px !important;
+}
+.require-text{
+    font-size: 0.8rem;
+    color: var(--button-color);
+    margin-bottom: 1rem;
+    display: flex; 
+}
+
+@media (min-width: 600px){
+    .container{
+      width: max(600px, 100%);
+    }
+}
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI CHATBOT-Chat</title>
+    <link rel="stylesheet" href="style-chat.css">
+    <script src="script-chat.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="chatbot-container">
+        <header>
+            <h2><img src="images/Owl.png" alt="icon">chatBOT</h2>
+        </header>
+
+       <div class="chat-container">
+            <div class="chatbot-box">
+                <img src="images/owl-face.png" alt="owl-face" class="avatar hidden">
+                <p class="bot hidden"></p>
+            </div>
+
+            <div class="user-reply">
+                <p class="user hidden"></p> 
+            </div> 
+       </div>
+       
+        <div class="chat-input">
+            <textarea id="user-input" placeholder="Enter a message..."></textarea>
+            <button type="submit" id="submit">
+              <img src="images/arrowup.svg" alt="Send">
+            </button>
+        </div>
+    </div>
+
+    
+</body>
+</html>
