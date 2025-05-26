@@ -57,16 +57,13 @@ const emailInput = document.getElementById('email-input');
 const createPasswordInput = document.getElementById('create-password-input');
 const repeatPasswordInput = document.getElementById('repeat-password-input');
 const registerMessage = document.querySelector('.alert-message'); 
+const registerButton = document.querySelector('button');
 
-document.addEventListener('DOMContentLoaded',()=>{
-    const registerButton = document.getElementById('register');
-  
-    registerButton.addEventListener('click',(e) => {
-        e.preventDefault();
-        createAccount();  
-    });  
-});
-
+  registerButton.addEventListener('click',(e)=>{
+     e.preventDefault();
+     createAccount();
+  });
+    
 function createAccount(){
     const usernameValue = usernameInput.value.trim();
     const emailValue = emailInput.value.trim();
@@ -119,3 +116,5 @@ function passwordStrong (password){
            specialCharacters.test(password) &&
            password.length >= minLength;  
 } 
+
+ 

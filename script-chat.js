@@ -8,9 +8,6 @@ const userInput = document.getElementById('user-input');
 // Import the API key from config.js
 import { API_KEY } from "./config.js";
 
-console.log("Using API Key:", API_KEY);
-
-
 const apiKey = API_KEY; 
 const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
