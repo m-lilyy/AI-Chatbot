@@ -43,11 +43,11 @@ git clone https://github.com/m-lilyy/AI-Chatbot.git
 
 ## Screenshot
 
-![Login Screenshot](images/login-preview.png)
-![Register Screenshot](images/register-preview.png)
-![Reset Password Screenshot](images/reset-password-preview.png)
-![Enter New Password Screenshot](images/enter-password-preview.png)
-![Chat Screenshot](images/chat.png)
+![Login Screenshot](images/login%20preview.png)
+![Register Screenshot](images/register%20preview.png)
+![Reset Password Screenshot](images/reset-password%20preview.png)
+![Enter New Password Screenshot](images/enter-password%20preview.png)
+![Chat Screenshot](images/chat%20preview.png)
 
 ## License
 
