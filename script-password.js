@@ -51,7 +51,7 @@ function createNewPassword (){
        messageAlert.style.color = "#FF00FF";
 
         setTimeout(() => {
-        window.location.href = "main.html";
+        window.location.href = "index.html";
         }, 2000);
         return;
    }else{

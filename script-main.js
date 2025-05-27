@@ -100,7 +100,7 @@ function createAccount(){
     registerMessage.textContent = "Registration successful!";
     
     setTimeout(() => {
-    window.location.href = "main.html";
+    window.location.href = "index.html";
     }, 2000);
  }
 
